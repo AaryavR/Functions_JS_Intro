@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Local and Global Variables</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery and Popper.js (Required for Bootstrap JavaScript) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+                
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+        <center>
+            <div>
+                <button onclick= "mul(12,13)">Multiply</button>
+                <p id="id">Result</p>
+            </div>
+        </center>
+
+        <script>
+            var x = 12;
+            function mul(x,y) {
+                var y = 13;
+                var r = x*y;
+                document.getElementById("id").innerText = r;
+                return;
+            };
+        </script>
+    </body>
+
+</html>
